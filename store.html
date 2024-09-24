@@ -3,11 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Introducing E-Store">
+    <meta name="author" content="Raj Kumar Nepal">
+    <meta name="keywords" content="E-Store, E-commerce, Store, Products, Cart">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Cache-Control" content="no-cache">
     <title>Introducing E-store</title>
+
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="css/store.css">
 </head>
 <body>
-    <header id="header" aria-labelledby="header">
-        <nav aria-labelledby="nav">
+    <header class="header" aria-labelledby="header">
+        <nav class="navbar" aria-labelledby="navbar">
             <div class="logo">E-Store</div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
@@ -18,7 +29,79 @@
             </ul>
         </nav>
     </header>
-
     
+        
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Introducing E-Store</h1>
+            <p>Your Store in Modern Era</p>
+            <a href="#" class="btn-primary">Find Products</a>
+        </div>
+    </section>
+
+    <section class="products">
+        <h2>Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="img/laptop.jpg" alt="Laptop" class="product-image">
+                <h3>Laptop</h3>
+                <p>Find your best laptop for your work and study.</p>
+                <button class="btn-secondary">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="img/desktop.png" alt="Desktop" class="product-image">
+                <h3>Desktop</h3>
+                <p>Find your best desktop for your work and study.</p>
+                <button class="btn-secondary">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="img/mobile.jpg" alt="Mobile" class="product-image">
+                <h3>Mobile</h3>
+                <p>Find your best mobile for your work and study.</p>
+                <button class="btn-secondary">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-us">
+        <h2>About Us</h2>
+        <p>We are customers of the modern era where we can get our stuff delivered to our door.</p>
+    </section>
+
+    <section class="contact-us">
+        <h2>Contact Us</h2>
+        <form action="#" method="post" class="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Name">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Message"></textarea>
+
+            <button type="submit" class="btn-primary">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 E-Store. All rights reserved. | <a href="https://merocms.com" target="_blank" rel="noopener noreferrer">MeroCMS</a></p>
+    </footer>
+
+
+
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+    
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+    </script>
+    
+
 </body>
 </html>
