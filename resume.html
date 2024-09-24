@@ -16,8 +16,8 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <header>
-        <nav>
+    <header aria-labelledby="header">
+        <nav aria-labelledby="navbar">
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#summary">Summary</a></li>
@@ -31,12 +31,12 @@
         </nav>
     </header>
 
-    <section id="home">
+    <section id="home" aria-labelledby="home">
         <h1>Raj Kumar Nepal</h1>
         <p>Cloud Engineer</p>
     </section>
 
-    <section id="summary">
+    <section id="summary" aria-labelledby="summary">
         <h2 id="summary-heading" aria-labelledby="summary-heading">Summary</h2>
         <p>
             Cloud Engineer with over 5 years of experience in designing and implementing innovative cloud solutions that drive business transformation.
@@ -85,6 +85,21 @@
         </section>
     </section>
 
+    <section id= "education" aria-labelledby="education">
+        <h2 id="education-heading" aria-labelledby="education-heading">Education</h2>
+        <section aria-labelledby="bachelors">
+            <h3 id="bachelors">Bachelor's Degree</h3>
+            <p><strong>BSc. (Hons) in Cyber Security and Digital Forensics</strong></p>
+            <p>ISMT College, Kathmandu, Nepal</p>
+            <p>Year: 2024-2027</p>
+        </section>
+        <section aria-labelledby="intermediate">
+            <h3 id="intermediate">Intermediate</h3>
+            <p><strong>Intermediate in Management</strong></p>
+            <p>Mount Everest Higher Secondary English School, Bara, Nepal</p>
+            <p>Year: 2013-2015</p>
+        </section>
+    </section>
 
     <footer style="text-align: center;">
         <p>&copy; 2024 Raj Kumar Nepal | <a href="https://merocms.com" target="_blank" rel="noopener noreferrer">MeroCMS</a></p>
