@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Login Page">
+    <meta name="author" content="Raj Kumar Nepal">
+    <meta name="keywords" content="Login, Sign In, Authentication">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <header class="header" aria-labelledby="header">
+        <nav class="navbar" aria-labelledby="navbar">
+            <div class="logo">E-Store</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#cart">Cart</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="login">
+        <h2>Login</h2>
+        <form action="login.php" method="POST">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" placeholder="Username" required></br>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="********" required></br>
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <footer class="footer" aria-labelledby="footer">
+        <p>&copy; 2021 E-Store. All Rights Reserved.</p>
+
+    </footer>
+</body>
+</html>
