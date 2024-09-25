@@ -10,6 +10,7 @@ PHP FullStack Bootcamp organized by college.
 ## Day 3
 - HTML Tables
 - Login Page
+- CSS Basics
 
 ## Day4
 - 
