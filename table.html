@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Introducing E-Store">
     <meta name="author" content="Raj Kumar Nepal">
-    <meta name="keywords" content="HTML, Tables, TH, TD, TR, THEAD">
+    <meta name="keywords" content="HTML, Tables, TH, TD, TR, THEAD, colspan, rowspan">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="Content-Language" content="en">
     <meta http-equiv="Content-Style-Type" content="text/css">
@@ -14,7 +14,7 @@
     <title>HTML Tables</title>
 
     <!-- Link to the CSS file -->
-    <link rel="stylesheet" href="css/store.css">
+    <link rel="stylesheet" href="css/table.css">
 </head>
 <body>
 
@@ -22,6 +22,9 @@
 
     <table border="1">
         <thead>
+            <tr>
+                <th colspan="4">ISMT College</th>
+            </tr>
             <tr>
                 <th>SN</th>
                 <th>Name of Student</th>
@@ -31,23 +34,25 @@
         </thead>
         <tbody>
             <tr>
-                <td>1</td>
-                <td>Raj Kumar Nepal</td>
-                <td>Kathmandu</td>
-                <td>9820150860</td>
+                <td data-label="SN">1</td>
+                <td data-label="Name of Student">Raj Kumar Nepal</td>
+                <td data-label="Address">Kathmandu</td>
+                <td data-label="Contact Number">9820150860</td>
             </tr>
             <tr>
-                <td>2</td>
-                <td>John Doe</td>
-                <td>New York</td>
-                <td>1234567890</td>
+                <td data-label="SN">2</td>
+                <td data-label="Name of Student">John Doe</td>
+                <td data-label="Address">New York</td>
+                <td data-label="Contact Number">1234567890</td>
             </tr>
             <tr>
-                <td>3</td>
-                <td>John Doe</td>
-                <td>New York</td>
-                <td>1234567890</td>
+                <td data-label="SN">3</td>
+                <td data-label="Name of Student">John Doe</td>
+                <td data-label="Address">New York</td>
+                <td data-label="Contact Number">1234567890</td>
             </tr>
         </tbody>
+
+    </table>
 </body>
 </html>
